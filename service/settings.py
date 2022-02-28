@@ -38,10 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    # own
-    'todoapp',
-    'rest_framework',
-]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
