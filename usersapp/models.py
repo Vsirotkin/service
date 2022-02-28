@@ -9,14 +9,7 @@ from django.core.exceptions import ValidationError
 
 class User(models.Model):
     uid         = models.UUIDField(primary_key=True, default=uuid4())
-    username    = models.CharField(max_length=64, unique=True)
+    username    = models.CharField(max_length=64)
     first_name  = models.CharField(max_length=64)
     last_name   = models.CharField(max_length=64)
     email       = models.EmailField(unique=True)
-    
-    def _validate_email(email):
-        try:
-            validate_email(email)
-            return True
-        except ValidationError:
-            return False
