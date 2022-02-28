@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     # own
-    'todoapp',
+    'usersapp',
     'rest_framework',
 ]
 
