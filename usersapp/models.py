@@ -2,9 +2,6 @@ from django.db import models
 
 from uuid import uuid4
 
-from django.core.validators import validate_email
-from django.core.exceptions import ValidationError
-
 # Create your models here.
 
 class User(models.Model):
