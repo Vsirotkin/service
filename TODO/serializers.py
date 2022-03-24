@@ -1,5 +1,5 @@
 from rest_framework.serializers import HyperlinkedModelSerializer
-from .models import Project, TODO
+from . import TODO, Project
 
 
 class ProjectModelSerializer(HyperlinkedModelSerializer):
