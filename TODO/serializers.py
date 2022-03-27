@@ -3,6 +3,7 @@ from .models import TODO, Project
 
 
 class ProjectModelSerializer(serializers.ModelSerializer):
+    usernames = serializers.StringRelatedField(many=True)
     class Meta:
         model = Project
         fields = '__all__'

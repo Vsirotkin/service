@@ -42,8 +42,8 @@ INSTALLED_APPS = [
     
     # own
     'usersapp',
-    'rest_framework',
     'TODO',
+    'rest_framework',
 ]
 
 
