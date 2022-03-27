@@ -6,8 +6,7 @@ class ProjectModelSerializer(serializers.ModelSerializer):
     usernames = serializers.StringRelatedField(many=True)
     class Meta:
         model = Project
-        fields = '__all__'
-
+        exclude = ['uid', 'repo_link']
 
 class TODOModelSerializer(serializers.ModelSerializer):
     class Meta:
